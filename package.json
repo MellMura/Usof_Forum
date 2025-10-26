@@ -1,0 +1,21 @@
+{
+  "name": "zugzwang",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "prestart": "node -r dotenv/config API/initDB.js dotenv_config_path=.env && npm run build --prefix frontend",
+    "start": "node API/server.js",
+    "seed": "node -r dotenv/config API/initDB.js dotenv_config_path=API/.env"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.6.1",
+    "express": "^4.19.2",
+    "express-session": "^1.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.2",
+    "mysql2": "^3.15.1",
+    "nodemailer": "^7.0.6"
+  }
+}
