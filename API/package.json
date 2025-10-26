@@ -1,0 +1,39 @@
+{
+  "name": "mkopniak-6197",
+  "version": "1.0.0",
+  "description": "",
+  "main": "db.js",
+  "scripts": {
+    "prestart": "node initDB.js",
+    "start": "node server.js",
+
+    "predev": "node initDB.js",
+    "dev": "nodemon server.js",
+
+    "seed": "node initDB.js",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@git.green-lms.app:22022/challenge-370/mkopniak-6197.git"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.19.2",
+    "express-session": "^1.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.2",
+    "mysql2": "^3.15.1",
+    "nodemailer": "^7.0.6"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": []
+}
