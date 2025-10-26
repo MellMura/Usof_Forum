@@ -1,0 +1,103 @@
+.profile_card { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid #cfc0af;
+    border-radius: 12px;
+    background: #fff;
+    overflow: visible;
+}
+
+.pc_left { 
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.pc_avatarLink {
+    text-decoration: none;
+    color: inherit;
+}
+
+.pc_avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #f2f2f2;
+}
+
+.pc_avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.pc_meta {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.pc_login {
+    font-weight: 700;
+    text-decoration: none;
+    color: inherit;
+}
+
+.pc_fullname {
+    opacity: .75;
+}
+
+.pc_stats {
+    display: flex;
+    gap: 12px;
+    font-size: .9rem;
+    opacity: .9;
+}
+
+.pc_actions {
+    position: relative;
+    overflow: visible;
+}
+
+.pc_kebab {
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 6px 8px;
+    color: #403625;
+}
+
+.pc_menu {
+  position: absolute;
+  right: 0;
+  top: 36px;
+  min-width: 150px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+  padding: 6px;
+  z-index: 2001;
+}
+.pc_menuItem {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+    text-align: left;
+    background: #fff;
+    border: 0;
+    white-space: nowrap;
+    cursor: pointer;
+    color: #403625;
+}
+.pc_menuItem:hover {
+    background: #f6f6f6;
+}

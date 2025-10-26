@@ -1,0 +1,113 @@
+:root{
+    --sidebar-w: 220px;
+    --radius-xl: 14px;
+  }
+  
+  .scrim{
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,0.35);
+    opacity: 0; pointer-events: none;
+    transition: opacity 200ms ease;
+    z-index: 1001;
+  }
+  .scrim.show{ opacity: 1; pointer-events: auto; }
+
+  #app-sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    height: 100dvh;
+    background-color: #fff;
+    width: 250px;
+    max-width: 85vw;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    transform: translateX(-100%);
+    transition: transform 240ms ease;
+    z-index: 1100;
+    padding: 10px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .sidebar-open #app-sidebar {
+    transform: translateX(0);
+  }
+  
+  .sidebar_nav{
+    display: grid;
+    gap: 6px;
+  }
+  
+  .sidebtn{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 0;
+    background: transparent;
+    border-radius: 10px;
+    padding: 10px 12px;
+    font: inherit;
+    color: #222;
+    text-align: left;
+    cursor: pointer;
+    transition: background .15s ease, transform .06s ease;
+  }
+  
+  .sidebtn:hover{
+    background: #e9e9e9;
+  }
+  
+  .sidebtn:active{
+    transform: scale(0.99);
+  }
+  
+  .sidebtn.is-active{
+    background: #e7e7e7;
+    font-weight: 700;
+  }
+  
+  .sidebtn_label{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  @media (min-width: 1024px){
+    .scrim { display: none }
+    .sidebar-open .page {
+      padding-left: 250px;
+    }
+    #app-sidebar{
+      position: fixed;
+      top: 60px;
+      left: 0;
+      width: 250px;
+      transform: translateX(-100%);
+      height: calc(100dvh - 60px);
+      visibility: hidden;
+      pointer-events: none;
+      box-shadow: none;
+      z-index: 2;
+    }
+
+    .sidebar-open #app-sidebar{
+      transform: none;
+      visibility: visible;
+      pointer-events: auto;
+    }
+  
+
+  }
+  
+  @media (max-width: 800px){
+    .sidebar_nav{
+      grid-auto-flow: row;
+      grid-auto-columns: initial;
+      overflow-x: visible; 
+      padding-bottom: 0;
+    }
+    .sidebtn{
+      white-space: nowrap;
+    }
+  }
+  

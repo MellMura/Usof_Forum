@@ -1,0 +1,41 @@
+.reaction-icons {
+  display:flex;
+  gap: 6px;
+}
+
+.icon-btn {
+  background: none;
+  border: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-btn .bx {
+  color: #403625;
+  font-size: 20px;
+  cursor: pointer;
+  width: 8px;
+  
+}
+
+.icon-btn.is-active .bxs-like {
+  color: #0fa12a;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.icon-btn.is-active .bxs-dislike {
+  color: #771744;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.count {
+  color: #403625;
+  opacity: 0.8;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin-top: 4px;
+  margin-left: 4px;
+}
