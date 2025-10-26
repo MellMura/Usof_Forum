@@ -1,0 +1,46 @@
+.cform {
+  margin: 8px 0 16px;
+  display: grid;
+  gap: 8px;
+}
+
+.cform textarea {
+  width: 100%;
+  background: #ffffff;
+  color: #363636;
+  border: 1px solid #cfc0af;
+  border-radius: 8px;
+  padding: 8px;
+  resize: vertical;
+}
+
+.cform_actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cform_err {
+  color: #ff5f52;
+  font-size: .9rem;
+}
+
+.cform .btn {
+  border: none;
+  background-color: #4e4a47;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 40px;
+  cursor: pointer;
+  font-size: 18px;
+  min-width: 180px;
+}
+
+.cform .btn:hover:not(:disabled) {
+  background-color: #7c7876;
+}
+
+.cform .btn:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}

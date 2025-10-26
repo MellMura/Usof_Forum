@@ -1,0 +1,12 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+
+.admin_btn .btn {
+  min-width: 100%;
+  margin-bottom: 5px;
+}

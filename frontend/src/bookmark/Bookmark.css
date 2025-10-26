@@ -1,0 +1,14 @@
+.bx, .bxs {
+  color: #403625;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.bookmark {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  width: 8px;
+}

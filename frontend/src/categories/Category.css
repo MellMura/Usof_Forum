@@ -1,0 +1,72 @@
+.cat_card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #cfc0af;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.cat_meta{ min-width: 0; }
+.cat_name{
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 1.2;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.cat_desc{
+  opacity: .75;
+  margin-top: 2px;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+
+.cat_actions {
+  position: relative;
+}
+.cat_kebab {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 8px;
+}
+.cat_kebab:hover {
+  background: rgba(0,0,0,0.04);
+}
+
+.cat_menu {
+  position: absolute;
+  top: 32px;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+  overflow: hidden;
+  min-width: 180px;
+  z-index: 10000;
+}
+
+.cat_menuItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 14px;
+  text-align: left;
+  background: #fff;
+  border: 0;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.cat_menuItem:hover {
+  background: #f6f6f6;
+}
+
+.cat_menuItem .bx {
+  font-size: 18px;
+  color: #403625;
+}
